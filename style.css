@@ -1,0 +1,237 @@
+body{
+  background-color: rgb(126, 171, 255);
+  opacity: 1;
+  transition-duration: 0.7s;
+  transition-property: opacity;
+}
+
+body.fade {
+  opacity: 0;
+}
+
+.cartelInfo{
+    color: white;
+    height: 30px;
+    font-family: sans-serif;
+    max-width: fit-content;
+    padding: 10px;
+    box-shadow: 2px 5px 5px rgba(117, 117, 117, 0.37);
+    border-radius: 10px;
+    background-color: rgb(36, 36, 36);
+    text-shadow: 2px 1px 1px rgba(109, 109, 109, 0.356);
+}
+
+.toast-close {
+  margin-left: 5px;
+}
+
+#headPage{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.climaTotal{
+  bottom: 0;
+  left:0;
+  margin: 10px;
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+  width: 250px;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 2px 5px 5px rgba(117, 117, 117, 0.37);
+  border-radius: 10px;
+  background-color: rgb(36, 36, 36);
+  text-shadow: 2px 1px 1px rgba(109, 109, 109, 0.356);
+}
+
+#climaIcon{
+  margin-right: 5px;
+}
+
+.tituloClima{
+  display: flex;
+  align-items: center;
+}
+
+.izqHead{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.botonAdd{
+    margin-left: 10px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.37);
+    border:0px solid transparent;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    border-radius: 40px;
+    user-select:none;
+    cursor:pointer;
+    transition: .2s;
+}
+.botonAdd:hover{
+    transition: .2s;
+    transform: translateX(10px);
+}
+.notaTop{
+    display: flex;
+    justify-content: space-between;
+}
+.botonDelete{
+    color: white;
+    user-select: none;
+    cursor:pointer;
+    width: 25px;
+    height: 25px;
+    border: 0px solid transparent;
+    border-top-right-radius: 10px;
+    background-color: red;
+}
+
+.tablonTotal{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+
+}
+.tituloNota{
+    font-family: 'Edu NSW ACT Foundation', cursive; 
+    font-size:24px; 
+    padding: 10px;
+    display: flex;
+    max-width: 250px;
+    padding-bottom: 5px;
+    text-decoration:underline;
+}
+
+ .contenidoNota{
+    font-family: 'Edu NSW ACT Foundation', cursive; 
+    font-size:20px; 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: fit-content;
+    justify-content: space-between;
+    min-height: 100px;
+    min-width: 100px;
+ }
+ .inputTitle{
+    height: 10px;
+    resize: none;
+    font-family: sans-serif;
+    resize:none;
+    width: 150px;
+    border: 0px solid transparent;
+    background-color: rgba(0, 0, 0, 0.151);
+    border-radius: 10px;
+    padding:10px;
+ }
+ .inputTitle::-webkit-scrollbar{
+    width: 0%;
+ }
+ .botones{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    flex-direction: row;
+ }
+
+ .inputEnviar{
+    border: 0px solid black;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+ }
+ 
+ .inputTexto{
+    font-family: sans-serif;
+    padding:10px;
+    background-color: rgba(0, 0, 0, 0.151);
+    border: 0px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width:150px;
+    resize: none;
+ }
+ .inputTexto::-webkit-scrollbar{
+    width: 0px;
+ }
+
+ .cancelBtn{
+    color: white;
+    border: 0px solid black;
+    background-color: rgb(255, 0, 0);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+ }
+.botonEdit{
+    color: black;
+    user-select: none;
+    cursor:pointer;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(34, 34, 34);
+    border:0px solid black;
+    width: 75px;
+    height: 25px;
+    color: white;
+}
+
+.notaTexto{
+    margin: 10px;
+}
+
+#notasTotales{
+    padding: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+
+/* animaciones */
+
+.animate__animated.animate__rollOut{
+    --animate-duration:.5s;
+}
+.vibrate-1 {
+	animation: vibrate-1 .5s linear infinite both;
+}
+@keyframes vibrate-1 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  @media (max-width:900px) {
+    .vibrate-1 {
+      animation: none;
+    }
+    
+  }
+
+  

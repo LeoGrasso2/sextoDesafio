@@ -4,6 +4,7 @@ let numNota=0;
 let i=0;
 let lat;
 let lon;
+let totalNotas=0;
 let idiomaUser = navigator.language.slice(0,2);
 
 totalNotas = JSON.parse(localStorage.getItem('listaNotas'));
